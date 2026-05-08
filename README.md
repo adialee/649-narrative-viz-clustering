@@ -1,31 +1,14 @@
-# si649-narrative-viz
+# si649-narrative-viz-clustering
 
-Interactive applicant journey visualization for National Heritage Academies, Inc. (NHA), developed by Christina Ng, Adia Lee, Selina Shan, and Shirley Ai through the University of Michigan School of Information, April 2026.
+An explorable explainer for understanding student applicant journeys at National Heritage Academies (NHA), characterizing applicant archetypes through a clustering analysis (PCA + K-Means). Developed by Adia Lee through University of Michigan School of Information, April 2026.
+
+**Live site:** [https://adialee.github.io/649-narrative-viz-clustering/cluster_index](https://adialee.github.io/649-narrative-viz-clustering/cluster_index)
+
+## Data Source & Availability
+
+The dataset consists of historical student application records from a network of over 100 charter schools managed by National Heritage Academies (NHA). This data cannot be made available due to client confidentiality and NDA restrictions.
+
+Code and methodological details are provided to enable replication with comparable data.
 
 ## Files
-
-- `interactive_viz.ipynb`: source notebook used to prepare data and define the Altair dashboard
-- `export_interactive_viz_html.py`: exports the dashboard into a hostable HTML page
-- `index.html`: GitHub Pages entry point
-- `interactive_viz_data/`: JSON datasets loaded by `index.html`
-
-## Regenerate The Hosted Visualization
-
-Run:
-
-```bash
-python3 export_interactive_viz_html.py
-```
-
-This refreshes `index.html` and the JSON files in `interactive_viz_data/`.
-
-## GitHub Pages
-
-Configure GitHub Pages to deploy from:
-
-- Branch: `main`
-- Folder: `/ (root)`
-
-The site will be available at:
-
-`https://cwjng.github.io/si649-narrative-viz/`
+- `nha_clustering.ipynb`: notebook for the clustering analysis (found in `clustering` branch)
